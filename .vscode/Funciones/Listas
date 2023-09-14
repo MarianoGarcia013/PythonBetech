@@ -1,0 +1,27 @@
+numeros = [1,2,3]
+
+# primero = numeros[1]
+# segundo = numeros[2]
+# tercero = numeros[3]
+
+primero, segundo, tercero = numeros
+#print(primero, segundo, tercero)
+
+primero, *otros = numeros
+#print(primero)
+
+mascotas = ['Lila', 'Manchita', 'Tomi', 'Jerry']
+
+#print(mascotas.index('Tomi'))
+
+mascotas.append('rudock')
+#print(mascotas)
+
+usuarios = [['Juan', 3],
+            ['Lucio',1],
+            ['Ramon',2]]
+
+nombres = []
+for usuario in usuarios:
+    nombres.append(usuario[1])
+print(nombres)

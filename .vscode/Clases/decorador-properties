@@ -1,0 +1,16 @@
+class Perro:
+    def __init__(self, nombre):
+        self.nombre = nombre
+
+    @property # Se crea una propiedad que se le agrega a la clase
+    def nombre(self):
+        return self.__nombre
+    
+    @nombre.setter # Se setea la propiedad que se le agrega
+    def nombre(self,nombre):
+        if nombre.strip():
+            self.__nombre = nombre
+        return
+    
+perro = Perro('leon')
+print(perro.nombre)
