@@ -1,0 +1,2 @@
+def pagandoFaltante():
+    print('pagamos')
